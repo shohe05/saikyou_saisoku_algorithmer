@@ -17,9 +17,10 @@ class KiwiJuiceEasy:
 
         return [from_bottle['quantity'], to_bottle['quantity']]
 
-kiwi = KiwiJuiceEasy()
-capacities = [700000, 800000, 900000, 1000000]
-bottles = [478478, 468478, 478478, 468478]
-from_id = [2, 3, 2, 0, 1]
-to_id = [0, 1, 1, 3, 2]
-print(kiwi.the_pouring(capacities, bottles, from_id, to_id))
+if __name__ == "__main__":
+    kiwi = KiwiJuiceEasy()
+    capacities = [700000, 800000, 900000, 1000000]
+    bottles = [478478, 468478, 478478, 468478]
+    from_id = [2, 3, 2, 0, 1]
+    to_id = [0, 1, 1, 3, 2]
+    print(kiwi.the_pouring(capacities, bottles, from_id, to_id))
